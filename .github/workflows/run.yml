@@ -1,5 +1,8 @@
 name: pikpak_auto_invite
 on:
+  workflow_dispatch:
+  watch:
+    types: [started]
   push:
     branches: [ main ]
     paths:
